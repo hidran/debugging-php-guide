@@ -1,0 +1,46 @@
+site_name: PHP Debugging Guide
+site_description: Debugging PHP on Windows with Herd, Xdebug, VS Code, PhpStorm, Laravel Sail and php artisan serve.
+site_url: https://<your-user>.github.io/debugging-php-guide/
+repo_url: https://github.com/<your-user>/debugging-php-guide
+repo_name: debugging-php-guide
+
+theme:
+  name: material
+  language: it
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - codehilite
+
+# docs_dir defaults to "docs" (ok per la nostra struttura)
+nav:
+  - 🇮🇹 Guida (IT):
+      - Introduzione: index.md
+      - Installare PHP con Herd: 01-install-php-herd.md
+      - Xdebug Wizard (Windows): 02-xdebug-wizard-windows.md
+      - VS Code setup: 03-vscode-setup.md
+      - PhpStorm setup: 04-phpstorm-setup.md
+      - Debug con Laravel Sail: 05-debug-with-sail.md
+      - Debug con artisan serve: 06-debug-with-artisan-serve.md
+      - Troubleshooting: 07-troubleshooting.md
+  - 🇬🇧 Guide (EN):
+      - Introduction: en/index.md
+      - Install PHP with Herd: en/01-install-php-herd.md
+      - Xdebug via Wizard: en/02-xdebug-wizard-windows.md
+      - VS Code setup: en/03-vscode-setup.md
+      - PhpStorm setup: en/04-phpstorm-setup.md
+      - Debug with Sail: en/05-debug-with-sail.md
+      - Debug with artisan serve: en/06-debug-with-artisan-serve.md
+      - Troubleshooting: en/07-troubleshooting.md

@@ -1,0 +1,26 @@
+name: Deploy MkDocs site to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install MkDocs + Material
+        run: |
+          pip install --upgrade pip
+          pip install mkdocs mkdocs-material
+      - name: Build site
+        run: mkdocs build --strict
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
