@@ -1,7 +1,7 @@
 site_name: PHP Debugging Guide
 site_description: Debugging PHP on Windows with Herd, Xdebug, VS Code, PhpStorm, Laravel Sail and php artisan serve.
-site_url: https://<your-user>.github.io/debugging-php-guide/
-repo_url: https://github.com/<your-user>/debugging-php-guide
+site_url: https://hidran.github.io/debugging-php-guide/
+repo_url: https://github.com/hidran/debugging-php-guide
 repo_name: debugging-php-guide
 
 theme:
